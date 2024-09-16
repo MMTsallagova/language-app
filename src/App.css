@@ -1,0 +1,224 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 60px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sakura-bg {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/images/sakura.jpg'); /* Путь к картинке */
+  background-size: cover; /* Картинка масштабируется, чтобы покрывать весь экран */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Избегаем повторения изображения */
+  opacity: 0.2;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.list-item {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #efb856;
+  background: #334553;
+  border: none;
+  border-radius: 12px; /* Закругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+  font-size: 18px; /* Увеличенный шрифт */
+  font-weight: bold;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Анимация */
+}
+
+/* Стиль при наведении */
+.list-item:hover {
+  background: rgba(93, 50, 50, 0.61); /* Темнее при наведении */
+  transform: translateY(-2px); /* Легкий эффект "подъема" */
+}
+
+/* Стиль для нажатой кнопки */
+.list-item:active {
+  background: #ff1a7d; /* Еще темнее при клике */
+  transform: translateY(0); /* Вернуть кнопку в исходное положение при клике */
+}
+.title {
+  font-size: 36px; /* Большой и заметный заголовок */
+  color: #334553; /* Яркий розовый цвет для заголовка */
+  text-align: center; /* Центрирование текста */
+  font-weight: bold; /* Жирный шрифт */
+  margin-bottom: 20px; /* Добавляем отступ снизу */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для текста */
+  letter-spacing: 1.2px; /* Немного увеличиваем расстояние между буквами */
+}
+
+.notification {
+  font-size: 18px; /* Чуть больший размер шрифта для уведомления */
+  color: #555; /* Мягкий серый цвет для текста */
+  text-align: center; /* Центрирование текста */
+  padding: 15px; /* Добавляем внутренние отступы для текста */
+  max-width: 600px; /* Ограничиваем ширину, чтобы текст не растягивался */
+  margin: 0 auto; /* Центрируем элемент на странице */
+}
+
+.page_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5; /* Легкий фон для всей страницы */
+}
+
+.content_container {
+  background-color: #fff; /* Белый фон для текста */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+  max-width: 800px; /* Ограничиваем ширину для лучшей читаемости */
+  width: 100%;
+  text-align: left;
+}
+
+.content_title {
+  font-size: 28px; /* Крупный заголовок */
+  font-weight: bold;
+  color: #334553; /* Яркий цвет заголовка */
+  margin-bottom: 20px; /* Отступ снизу */
+  display: block;
+  text-align: center; /* Центрируем заголовок */
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень для заголовка */
+}
+
+.content_main {
+  font-size: 18px; /* Размер основного текста */
+  line-height: 1.6; /* Увеличиваем межстрочный интервал для лучшей читабельности */
+  color: #333; /* Мягкий черный цвет текста */
+  margin-bottom: 20px; /* Отступ снизу */
+  display: block;
+  white-space: pre-wrap; /* Сохраняем переносы строк */
+}
+
+.content_note {
+  font-size: 14px; /* Меньший шрифт для заметки */
+  color: #999; /* Светло-серый цвет для заметок */
+  font-style: italic; /* Курсив для стилизации */
+  display: block;
+  margin-top: 15px; /* Отступ сверху */
+  text-align: left; /* Выровняем заметку по правому краю */
+}
+.edit-button {
+  background-color: #334553;
+  color: #efb856;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #5D32329B;
+}
+
+.editor_form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.form_group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form_input,
+.form_textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.form_input:focus,
+.form_textarea:focus {
+  border-color: #5D32329B;
+  outline: none;
+}
+
+.submit_button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #334553;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit_button:hover {
+  background-color: #5D32329B;
+}

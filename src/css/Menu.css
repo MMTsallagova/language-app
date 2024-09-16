@@ -1,0 +1,42 @@
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Более мягкая и объемная тень */
+    border-radius: 12px; /* Закругленные углы */
+    padding: 15px; /* Увеличиваем отступы для "воздушности" */
+    transition: all 0.3s ease; /* Плавная анимация для всего меню */
+    z-index: 999;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 12px 0; /* Больше пространства между пунктами */
+    transition: transform 0.2s ease; /* Плавный эффект при наведении */
+}
+
+.menu ul li:hover {
+    transform: scale(1.05); /* Легкий эффект увеличения при наведении */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #555; /* Сделаем текст немного мягче */
+    font-size: 16px;
+    font-weight: bold; /* Более жирный текст для акцента */
+    padding: 8px 12px; /* Увеличиваем внутренние отступы для удобства */
+    display: block; /* Блоковый элемент для лучшего взаимодействия */
+    border-radius: 8px; /* Небольшие закругления для пунктов меню */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #334553; /* Приятный розовый фон при наведении */
+    color: #fff; /* Белый текст на розовом фоне */
+}

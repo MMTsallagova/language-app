@@ -1,0 +1,53 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #334553,#bae0da); /* Градиент вместо однотонного фона */
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 30px; /* Увеличиваем отступы для большей "воздушности" */
+    z-index: 1000;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Добавляем легкую тень */
+    transition: background 0.3s ease;
+}
+
+.logo {
+    font-size: 24px; /* Увеличиваем размер шрифта для логотипа */
+    color: #efb856;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.5px; /* Небольшое расстояние между буквами для стильного вида */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Тень на тексте для объема */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Легкий эффект увеличения при наведении */
+}
+
+.menu-btn {
+    background-color: #334553;
+    color: #efb856;
+    padding: 10px 20px; /* Больше отступов для комфортного нажатия */
+    cursor: pointer;
+    border-radius: 12px; /* Более округлые углы */
+    border: solid 4px #efb856;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Мягкая тень для кнопки */
+    transition: all 0.3s ease;
+    font-size: 16px; /* Чуть больше шрифт для читабельности */
+}
+
+.menu-btn:hover {
+    background-color: #b3bcbb; /* Меняем цвет фона при наведении */
+    color: #3c4443; /* Меняем цвет текста при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Усиливаем тень при наведении */
+}
+
+.menu-btn:active {
+    transform: scale(1); /* Возвращаем в норму при клике */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень уменьшается при клике */
+}
