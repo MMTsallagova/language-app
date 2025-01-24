@@ -16,10 +16,10 @@ const Vocabulary = () => {
     return (
         <div className="page_container">
             <Link to={`${(PAGES.WORD_CREATE).replace(':id', id)}`} className="edit-button">
-                Добавить слово в список
+                Add word on the list
             </Link>
-            <h1 className="title">Слова</h1>
-            <p className="notification">Выберите желаемое слово</p>
+            <h1 className="title">Words</h1>
+            <p className="notification">Select word for study</p>
             <div className="grid-list">
                 {words && words.map((item) => (
                     <Link className="list-item" key={item.id}

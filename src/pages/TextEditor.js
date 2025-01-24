@@ -61,7 +61,7 @@ const TextEditor = () => {
         <div className="page_container">
             <form className="editor_form" onSubmit={handleSubmit}>
                 <div className="form_group">
-                    <label htmlFor="title">Заголовок:</label>
+                    <label htmlFor="title">Title:</label>
                     <input
                         type="text"
                         id="title"
@@ -72,7 +72,7 @@ const TextEditor = () => {
                     />
                 </div>
                 <div className="form_group">
-                    <label htmlFor="text">Текст:</label>
+                    <label htmlFor="text">Text:</label>
                     <textarea
                         id="text"
                         name="text"
@@ -83,7 +83,7 @@ const TextEditor = () => {
                     ></textarea>
                 </div>
                 <div className="form_group">
-                    <label htmlFor="note">Заметка:</label>
+                    <label htmlFor="note">Note:</label>
                     <textarea
                         id="note"
                         name="note"
@@ -93,7 +93,7 @@ const TextEditor = () => {
                         rows="4"
                     ></textarea>
                 </div>
-                <button type="submit" className="submit_button">Сохранить</button>
+                <button type="submit" className="submit_button">Save</button>
             </form>
         </div>
     );

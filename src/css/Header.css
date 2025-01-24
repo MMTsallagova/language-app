@@ -15,9 +15,10 @@
 }
 
 .logo {
+    font-family: Oswald, sans-serif;
     font-size: 24px; /* Увеличиваем размер шрифта для логотипа */
     color: #efb856;
-    font-weight: bold;
+    font-weight: lighter;
     text-decoration: none;
     letter-spacing: 1.5px; /* Небольшое расстояние между буквами для стильного вида */
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Тень на тексте для объема */
@@ -37,7 +38,9 @@
     border: solid 4px #efb856;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Мягкая тень для кнопки */
     transition: all 0.3s ease;
-    font-size: 16px; /* Чуть больше шрифт для читабельности */
+    font-family: Oswald, sans-serif;
+    font-weight: lighter;
+    font-size: 20px; /* Чуть больше шрифт для читабельности */
 }
 
 .menu-btn:hover {

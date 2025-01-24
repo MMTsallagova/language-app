@@ -14,10 +14,10 @@ const VocabularyList = () => {
     return (
         <div className="page_container">
         <Link to={`${PAGES.VOCABULARY_CREATE}`} className="edit-button">
-        Добавить список слов
+        Add new vocabulary
     </Link>
-    <h1 className="title">Словарь</h1>
-    <p className="notification">Выберите желаемый словарь</p>
+    <h1 className="title">Vocabulary</h1>
+    <p className="notification">Select vocabulary for study</p>
     <div className="grid-list">
         {list && list.map((item) => (
             <Link className="list-item" key={item.id}

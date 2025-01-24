@@ -14,10 +14,10 @@ const Reading = () => {
     return (
         <div className="page_container">
             <Link to={`${PAGES.TEXT_CREATE}`} className="edit-button">
-                Добавить текст
+                Add new text
             </Link>
-            <h1 className="title">Чтение</h1>
-            <p className="notification">Выберите один из текстов</p>
+            <h1 className="title">READING</h1>
+            <p className="notification">Select one of the texts</p>
             <div className="grid-list">
                 {list && list.map((item) => (
                     <Link className="list-item" key={item.id}

@@ -28,6 +28,7 @@
 .menu ul li a {
     text-decoration: none;
     color: #555; /* Сделаем текст немного мягче */
+    font-family: Oswald, sans-serif;
     font-size: 16px;
     font-weight: bold; /* Более жирный текст для акцента */
     padding: 8px 12px; /* Увеличиваем внутренние отступы для удобства */

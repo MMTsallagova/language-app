@@ -7,10 +7,10 @@ const Menu = () => {
     return (
         <div className="menu">
             <ul>
-                <li><Link to={PAGES.READING}>Чтение</Link></li>
-                <li><Link to={PAGES.KANJI}>Кандзи</Link></li>
-                <li><Link to={PAGES.VOCABULARY_LIST}>Слова</Link></li>
-                <li><Link to={PAGES.GRAMMAR}>Грамматика</Link></li>
+                <li><Link to={PAGES.READING}>READING</Link></li>
+                <li><Link to={PAGES.KANJI}>KANJI</Link></li>
+                <li><Link to={PAGES.VOCABULARY_LIST}>VOCABULARY</Link></li>
+                <li><Link to={PAGES.GRAMMAR}>GRAMMAR</Link></li>
             </ul>
         </div>
     );

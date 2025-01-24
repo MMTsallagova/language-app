@@ -14,9 +14,9 @@ const Header = () => {
     return (
         <header className="header">
             <button className="menu-btn" onClick={toggleMenu}>
-                Меню
+                Menu
             </button>
-            <Link to={PAGES.HOME} className="logo">Японский язык</Link>
+            <Link to={PAGES.HOME} className="logo">Study Japanese</Link>
             {menuOpen && <Menu />}
         </header>
     );
